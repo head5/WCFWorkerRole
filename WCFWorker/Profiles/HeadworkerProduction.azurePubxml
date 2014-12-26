@@ -19,6 +19,6 @@
     <AzureStorageAccountName>headworker</AzureStorageAccountName>
     <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
     <EnableRemoteDebugger>True</EnableRemoteDebugger>
-    <RemoteDebuggerConnectorCertificateThumbprint>200C519347F88F0F5F14FFB28E34CCB154DFF203</RemoteDebuggerConnectorCertificateThumbprint>
+    <RemoteDebuggerConnectorCertificateThumbprint>05CF910FCCB5ABCD6C9BBAA73587564A93398CD2</RemoteDebuggerConnectorCertificateThumbprint>
   </PropertyGroup>
 </Project>
