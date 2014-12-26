@@ -2,14 +2,13 @@
 <ServiceDefinition name="WCFWorker" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
   <WorkerRole name="WorkerRole1" vmsize="Small">
     <Imports>
-      <Import moduleName="Diagnostics" />
       <Import moduleName="RemoteAccess" />
       <Import moduleName="RemoteForwarder" />
     </Imports>
     <Endpoints>
-      <InternalEndpoint name="port" protocol="tcp" port="8080"/>
-      <InternalEndpoint name="mexport" protocol="tcp"  port="8081"/>
-      <InputEndpoint name="Input" protocol="http" port="8733"/>
+      <InternalEndpoint name="port" protocol="tcp" port="8080" />
+      <InternalEndpoint name="mexport" protocol="tcp" port="8081" />
+      <InputEndpoint name="Input" protocol="http" port="8733" />
     </Endpoints>
   </WorkerRole>
 </ServiceDefinition>
