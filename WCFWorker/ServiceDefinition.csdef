@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ServiceDefinition name="WCFWorker" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
   <WorkerRole name="WorkerRole1" vmsize="Small">
-    <Runtime executionContext ="elevated" />
+    <Runtime executionContext="elevated" />
     <Imports>
       <Import moduleName="RemoteAccess" />
       <Import moduleName="RemoteForwarder" />
@@ -11,5 +11,8 @@
       <InternalEndpoint name="mexport" protocol="tcp" port="8081" />
       <InputEndpoint name="Input" protocol="http" port="8733" />
     </Endpoints>
+    <ConfigurationSettings>
+      <Setting name="ConnectionString" />
+    </ConfigurationSettings>
   </WorkerRole>
 </ServiceDefinition>
