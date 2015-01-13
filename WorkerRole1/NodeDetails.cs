@@ -13,6 +13,8 @@ namespace WorkerRole1
         private Computerinfo computerInfo;       
         private ProcessRunning processConsumeMemory;
 
+
+// Node Details
         public NodeDetails()
         {
             versionInfo = new version();
